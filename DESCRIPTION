@@ -3,8 +3,7 @@ Type: Package
 Title: Fit a Linear Regression model and obtain result summary
 Version: 0.1.0
 Author: Aditya Jalin
-Maintainer: Aditya Jalin
-Description: This package provides
+Description: The package enables fitting a Linear Regression model for a continous response variable against both continous and/or categorical covariates
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
