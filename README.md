@@ -1,4 +1,7 @@
 # BIOS625HW3
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/adityabn6/BIOS625HW3/workflows/R-CMD-check/badge.svg)](https://github.com/adityabn6/BIOS625HW3/actions)
+  <!-- badges: end -->
 # Linear Regression Package
 
 The package enables fitting a Linear Regression model for a continous response variable against both continous and/or categorical covariates
