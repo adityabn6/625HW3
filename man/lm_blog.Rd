@@ -7,12 +7,12 @@
 lm_blog(eqn, dataset)
 }
 \arguments{
-\item{eqn}{Equation of the model to be fitted. The argument is of the form :Y ~ X1 + X2... + Xn.}
+\item{\emph{eqn}}{Equation of the model to be fitted. The argument is of the form :Y ~ X1 + X2... + Xn.}
 
-\item{dataset}{Dataframe containing the covariates and response variable as column names.}
+\item{\emph{dataset}}{Dataframe containing the covariates and response variable as column names.}
 }
 \value{
-lm_blog returns a list "lr". The list "lr" contains the following components:\cr
+\emph{lm_blog} returns a list "lr". The list "lr" contains the following components:\cr
 \tabular{rrrrr}{
   \strong{Element} \tab \strong{Desciption}\cr
   \emph{dataset} \tab Equation used to fit the model.\cr
@@ -31,11 +31,11 @@ lm_blog returns a list "lr". The list "lr" contains the following components:\cr
 }
 }
 \description{
-lm_blog is used to fit Simple Linear Regression and Multiple Linear Regression models with continous or categorical covariates.
+\emph{lm_blog} is used to fit Simple Linear Regression and Multiple Linear Regression models with continous or categorical covariates.
 }
 \details{
-lm_blog takes an equation and a dataframe as arguments to fit a linear regression model represented by the equation.
-The dataframe should contain the response variable and the covariates present in the equation as column names.\cr The covariates are treated as continous or categorical. lm_blog automatically converts any non numeric data time into dummy variables using one-got encoding.\cr lm_blog then fits the model using the method of least squares
+\emph{lm_blog} takes an equation and a dataframe as arguments to fit a linear regression model represented by the equation.
+The dataframe should contain the response variable and the covariates present in the equation as column names.\cr The covariates are treated as continous or categorical. lm_blog automatically converts any non numeric data time into dummy variables using one-got encoding.\cr \emph{lm_blog} then fits the model using the method of least squares
 }
 \examples{
 library(datasets)\crdata(iris)\crlm_blog(Sepal.Length ~ Sepal.Width + Petal.Length + Species,iris)

@@ -14,14 +14,21 @@
 
 
 summary_blog <- function(lr){
+
+  #Extracting the response variable and covariates from the fitted object
   x<-lr[[13]]
   y<-lr[[12]]
 
+  #Printing the function call for the model fit
   print(paste("blog_lm(formula = ",lr[[2]]))
+
+  #Summary Statistics of the residuals
   res <- quantile(lr[[7]])
   names(res) <- c("Min","1Q","Median","3Q","Max")
   print(res)
 
+
+  #Creating table for the coefficient estimates
   estimate <-lr[[3]][,1]
   se <- sqrt(diag(lr[[6]]))
   tvals <- lr[[3]][,1]/sqrt(diag(lr[[6]]))
@@ -34,6 +41,9 @@ summary_blog <- function(lr){
                         "Std. Error" = se,
                         "t value" = tvals,
                         "Pr(>|t|)" = fvals,check.names = FALSE)
+
+
+  #Displaying the outputs
   cat("Call:","\n",
       paste("blog_lm(formula = ",lr[[2]]),"\n\n",
       "Residuals:","\n", sep="")

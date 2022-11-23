@@ -1,15 +1,15 @@
 Package: BIOS625HW
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Fit a Linear Regression model and obtain result summary
 Version: 0.1.0
 Author: Aditya Jalin
 Maintainer: Aditya Jalin
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: This package provides
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Suggests: 
+    covr,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
@@ -17,7 +17,8 @@ Imports:
     data.table, 
     tibble,
     stringr,
-    fastDummies
+    fastDummies,
+    bench
 VignetteBuilder: knitr
 RoxygenNote: 7.1.2
 Config/testthat/edition: 3

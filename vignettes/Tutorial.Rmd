@@ -88,8 +88,9 @@ df1<-data.frame(x1,x2)
 lr_na <- lm_blog(x1 ~ x2,df1)
 summary_blog(lr_na)
 ```
+# Comparing with native functions
 
-# Comparing lm_blog() with lm() from the stats library
+## Comparing lm_blog() with lm() from the stats library
 
 ```{r}
 #Fitted model using lm()
@@ -112,7 +113,7 @@ all.equal(as.numeric(lr_iris[[4]]),as.numeric(lr_lm$fitted.values))
 
 ```
 
-# Comparing summary_blog() with summary() from the base R
+## Comparing summary_blog() with summary() from the base R
 ```{r}
 #Between models fitted using lm_blog() and lm()
 summary(lr_lm)
@@ -126,3 +127,12 @@ summary(lr_lm)
 summary_blog(lr_iris)
 
 ```
+
+## Benchmark
+
+```{r}
+bench::mark(summary(lr_lm))
+bench::mark(summary_blog(lr_iris))
+
+```
+
