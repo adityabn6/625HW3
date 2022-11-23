@@ -1,6 +1,6 @@
 # BIOS625HW3
 <!-- badges: start -->
-  [![R-CMD-check](https://github.com/adityabn6/BIOS625HW3/workflows/R-CMD-check/badge.svg)](https://github.com/adityabn6/BIOS625HW3/actions)
+  [![R-CMD-check](https://github.com/adityabn6/625HW3/workflows/R-CMD-check/badge.svg)](https://github.com/adityabn6/625HW3/actions)
   <!-- badges: end -->
 # Linear Regression Package
 
